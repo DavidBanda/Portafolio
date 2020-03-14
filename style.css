@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: rgb(37, 35, 35);
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #c9ced3;
+    text-align: left;
+}
+
+.navbar {
+    position: sticky;
+    opacity: .8;
+    background-color: rgb(35, 34, 37);
+}
+
+.navbar-brand {
+    white-space: nowrap;
+    font-size: 1.3rem;
+    color: rgb(245, 239, 239) !important;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.navbar-toggler {
+    float: right;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-width: .2rem !important;
+}
+.nav-link:hover {
+    color: rgb(212, 198, 198) !important;
+}
+
+.nav-link{
+    cursor: pointer;
+    font-family: "Montserrat" !important;
+}
+ .bg-image {
+     position: absolute;
+     left: 0;
+     z-index: -1;
+     width: 100%;
+     opacity: .5;
+ }
+
+.masthead {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+  }
+  
+  .masthead .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    position: static;
+  }
+  
+  .masthead .masthead-subheading {
+    font-size: 1.25rem;
+  }
+
+  .masthead p {
+    font-family: "Montserrat" !important;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .masthead .masthead-avatar {
+    width: 15rem;
+    border-radius: 50%;
+  }
+
+  #mano {
+      width: 3rem;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+      font-size: 1.5rem;
+    }
+    #mano {
+        width: 3rem;
+    }
+  }
+
+  #mano2 {
+      width: 1rem;
+  }
+
+  @media (max-width: 702px) {
+    .masthead .masthead-avatar {
+        width: 10rem;
+        border-radius: 50%;
+    }
+    #mano {
+        width: 2.2rem;
+    }
+  }
+
+  @media (max-width: 992) {
+    .masthead .masthead-avatar {
+        width: 12rem;
+        border-radius: 50%;
+    }
+    #mano {
+        width: 2.7rem;
+    }
+  }
+
+  .divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+  }
+  
+  .divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+  }
+  
+  .divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+  }
+  
+  .divider-custom .divider-custom-icon {
+    color: #2c3e50 !important;
+    font-size: 2rem;
+  }
+  
+  .divider-custom.divider-light .divider-custom-line {
+    background-color: #fff;
+  }
+  
+  .divider-custom.divider-light .divider-custom-icon {
+    color: #fff !important;
+  }
+
+  .portfolio {
+  margin-top: 15rem;
+  margin-bottom: -10rem;
+}
+
+.footer {
+    margin-top: 10rem;
+}
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 30px;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(44, 45, 61, 0.9);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+
+  @media (max-width: 992px) {
+    .portfolio {
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+    .footer {
+        margin-top: -10rem;
+    }
+  }
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: rgb(44, 45, 61);
+  opacity: 1;
+}
+
+.btn-social {
+  border-radius: 100%;
+  height: 2.8rem;
+}
+
+.btn i {
+  margin-top: 0.4rem;
+}
+
+.modal-body p {
+    color: rgb(121, 115, 115);
+}
+
